@@ -25,18 +25,18 @@ const blogs = [
   },
 ];
 
-module.exports = blogs;
+module.exports = { blogs };
 
-const db = require("../models");
+// const db = require("../models");
 
-const Blog = db.blogs;
+// const Blog = db.blogs;
 
-blogs.forEach(function (x) {
-  Blog.findAll(x)
-    .then((data) => {
-      console.log();
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
+// blogs.forEach(function (x) {
+//   Blog.findAll(x)
+//     .then((data) => {
+//       console.log();
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// });
